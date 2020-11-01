@@ -1,6 +1,6 @@
 # Windows 10 Virtual Desktop Enhancer
 
-**Warning:** I am officially no longer maintaining this project due to lack of time and interest. Thanks for using it and for all of your work towards helping me improve it. -sdias
+**Warning:** Fork of retired project.
 
 ## Introduction
 

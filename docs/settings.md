@@ -2,6 +2,7 @@
 
 There are lots of parameters you can personalize to make this program behave exactly as you want.  
 Mainly you will have to edit some lines in the `settings.ini` file in the main folder of the program.
+You can also override settings by creating/editing the file `%APPDATA%\virtual-desktop-enhancer.ahk\settings.ini`
 
 ## Table of contents
 

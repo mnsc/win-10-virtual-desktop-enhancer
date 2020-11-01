@@ -56,6 +56,14 @@ Menu, Tray, Click, 1
 
 ReadIni("settings.ini")
 
+; Override settings with file in %APPDATA%\virtual-desktop-enhancer.ahk\settings.ini
+userSettingsLocation = %A_AppData%\%A_ScriptName%\settings.ini
+        
+if (FileExist(userSettingsLocation)) {
+    ReadIni(userSettingsLocation)
+
+}
+
 global GeneralDesktopWrapping := (GeneralDesktopWrapping != "" and GeneralDesktopWrapping ~= "^[01]$") ? GeneralDesktopWrapping : 1
 global TooltipsEnabled := (TooltipsEnabled != "" and TooltipsEnabled ~= "^[01]$") ? TooltipsEnabled : 1
 global TooltipsLifespan := (TooltipsLifespan != "" and TooltipsLifespan ~= "^\d+$") ? TooltipsLifespan : 750
